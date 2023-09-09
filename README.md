@@ -1,1 +1,3 @@
 # schedulesmarterLP
+
+scheculesmarterというサービスのランディングページです。

@@ -51,3 +51,21 @@ $(function(){
 		return false;
 	});
 });
+
+// スライダー
+$(function(){  
+    $('#mainimg').vegas({
+      slides: [//画像名指定
+       { src: 'img/mainimg.jpg' },
+       { src: 'img/product.jpg' },
+       { src: 'img/mainimg.jpg' }
+      ],
+       delay: 7000,
+       timer: false,
+       transitionDuration: 3000,//切り替わりのアニメーション時間
+       transition: 'blur', //切り替わりのアニメーション
+       animation: 'random' // ランダムに表示
+    });
+  });
+
+  AOS.init();

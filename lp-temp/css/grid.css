@@ -43,12 +43,12 @@ body {
 }
 
 /* ブロックを縦に表示 */
-/* .row {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-} */
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
 
 .col {
   display: block;

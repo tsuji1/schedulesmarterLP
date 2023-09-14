@@ -1,22 +1,22 @@
-$(function(){
-        $("#open").show();
-        $("#close").hide();
+$(function () {
+    $("#open").show();
+    $("#close").hide();
     // アイコンをクリック
-	$("#open").click(function(){
-		// ulメニューを開閉する
-		$("#navi").slideToggle();
+    $("#open").click(function () {
+        // ulメニューを開閉する
+        $("#navi").slideToggle();
         $("#open").hide();
         $("#close").show();
-	});
-        
+    });
+
     // アイコンをクリック
-	$("#close").click(function(){
-		// ulメニューを開閉する
-		$("#navi").slideToggle();
+    $("#close").click(function () {
+        // ulメニューを開閉する
+        $("#navi").slideToggle();
         $("#open").show();
         $("#close").hide();
-	});
-	
+    });
+
 });
 
 $(function () {
@@ -39,33 +39,31 @@ $(function () {
     });
 });
 
-$(function(){
-	// メニューをクリック
-	$("a[href*=#]:not([href=#])").click(function(){
-		// 移動先のコンテンツ位置を取得
-		var target = $($(this).attr("href")).offset().top;
-		// 50px減らす
-		target -= 50;
-		// 各コンテンツへスクロール
-		$("html, body").animate({scrollTop: target}, 500);
-		return false;
-	});
+$(function () {
+    // メニューをクリック
+    $("a[href*=#]:not([href=#])").click(function () {
+        // 移動先のコンテンツ位置を取得
+        var target = $($(this).attr("href")).offset().top;
+        // 50px減らす
+        target -= 50;
+        // 各コンテンツへスクロール
+        $("html, body").animate({ scrollTop: target }, 500);
+        return false;
+    });
 });
 
 // スライダー
-$(function(){  
+$(function () {
     $('#mainimg').vegas({
-      slides: [//画像名指定
-       { src: 'img/mainimg.jpg' },
-       { src: 'img/product.jpg' },
-       { src: 'img/mainimg.jpg' }
-      ],
-       delay: 7000,
-       timer: false,
-       transitionDuration: 3000,//切り替わりのアニメーション時間
-       transition: 'blur', //切り替わりのアニメーション
-       animation: 'random' // ランダムに表示
+        slides: [//画像名指定
+            { src: 'img/hp_main.png' }
+        ],
+        delay: 10000,
+        timer: false,
+        transitionDuration: 4000,//切り替わりのアニメーション時間
+        transition: 'blur', //切り替わりのアニメーション
+        animation: 'random' // ランダムに表示
     });
-  });
+});
 
-  AOS.init();
+AOS.init();
